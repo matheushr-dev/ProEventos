@@ -476,6 +476,11 @@ testem.log
 .DS_Store
 Thumbs.db
 
+#Excluindo DB
+*.db
+*.db-shm
+*.db-wal
+
 # ----------------- IDE => VSCode -----------------
 .vscode/*
 !.vscode/settings.json
