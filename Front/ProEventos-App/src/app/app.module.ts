@@ -13,20 +13,29 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AppComponent } from './app.component';
-import { EventosComponent } from './eventos/eventos.component';
-import { PalestrantesComponent } from './palestrantes/palestrantes.component';
-import { NavComponent } from './nav/nav.component';
+import { EventosComponent } from './componentes/eventos/eventos.component';
+import { PalestrantesComponent } from './componentes/palestrantes/palestrantes.component';
+import { NavComponent } from './shared/nav/nav.component';
+import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
+import { TituloComponent } from './shared/titulo/titulo.component';
+import { ContatosComponent } from './componentes/contatos/contatos.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { PerfilComponent } from './componentes/perfil/perfil.component';
 
 import { EventoService } from './services/evento.service';
-import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
+
 
 @NgModule({
   declarations: [	 //Componentes
     AppComponent,
+    NavComponent,
+    TituloComponent,
     EventosComponent,
     PalestrantesComponent,
-    NavComponent,
-    DateTimeFormatPipe
+    ContatosComponent,
+    DashboardComponent,
+    DateTimeFormatPipe,
+    PerfilComponent
    ],
   imports: [ //Modulos
     BrowserModule,
